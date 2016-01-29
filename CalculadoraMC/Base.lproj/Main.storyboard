@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="ACe-QZ-XXB">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+    </dependencies>
+    <scenes>
+        <!--Calculadora IMC-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="CalculadoraMC" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Peso" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uhP-Ln-Zmh">
+                                <rect key="frame" x="257" y="141" width="38" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Peso" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ms5-8d-1Va">
+                                <rect key="frame" x="281" y="174" width="38" height="20"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="20" id="BAm-i3-p4d"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="6H3-Up-YYQ">
+                                <rect key="frame" x="252" y="209" width="97" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="97" id="MfS-jN-8VA"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Calculadora IMC" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5g7-1L-kqE">
+                                <rect key="frame" x="208" y="105" width="184" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Nxr-dg-lcv">
+                                <rect key="frame" x="252" y="326" width="97" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="lSQ-lu-f7O"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4xr-FB-C3p">
+                                <rect key="frame" x="272" y="396" width="56" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="UI4-Nu-e63"/>
+                                </constraints>
+                                <state key="normal" title="Calcular"/>
+                                <connections>
+                                    <action selector="calcularIMC:" destination="BYZ-38-t0r" eventType="touchUpInside" id="48o-k7-epd"/>
+                                    <segue destination="N14-Sk-RTZ" kind="show" id="Kvf-8I-fzh"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Estatura" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DyL-LX-bif">
+                                <rect key="frame" x="268" y="289" width="64" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="3RU-ES-gm0"/>
+                                    <constraint firstAttribute="width" constant="64" id="EJm-LS-tvL"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XJz-p9-YLr">
+                                <rect key="frame" x="265" y="415" width="70" height="30"/>
+                                <state key="normal" title="Calcular">
+                                    <color key="titleColor" red="0.00092539059728047324" green="0.43332275322915481" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="calcularIMC:" destination="BYZ-38-t0r" eventType="touchUpInside" id="85u-S6-vv8"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="ninja" translatesAutoresizingMaskIntoConstraints="NO" id="04d-9P-SN6">
+                                <rect key="frame" x="287" y="460" width="27" height="28"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="30" id="dh0-NU-XkY"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="04d-9P-SN6" firstAttribute="top" secondItem="4xr-FB-C3p" secondAttribute="bottom" constant="22" id="5Bi-0L-eev"/>
+                            <constraint firstItem="6H3-Up-YYQ" firstAttribute="top" secondItem="Ms5-8d-1Va" secondAttribute="bottom" constant="15" id="5UP-wH-0nw"/>
+                            <constraint firstItem="Nxr-dg-lcv" firstAttribute="centerX" secondItem="4xr-FB-C3p" secondAttribute="centerX" id="8gG-AK-F46"/>
+                            <constraint firstItem="DyL-LX-bif" firstAttribute="top" secondItem="6H3-Up-YYQ" secondAttribute="bottom" constant="50" id="8wB-HC-35f"/>
+                            <constraint firstItem="6H3-Up-YYQ" firstAttribute="leading" secondItem="Nxr-dg-lcv" secondAttribute="leading" id="AQS-me-7ux"/>
+                            <constraint firstItem="Ms5-8d-1Va" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="HA1-ta-nhh"/>
+                            <constraint firstItem="Nxr-dg-lcv" firstAttribute="trailing" secondItem="6H3-Up-YYQ" secondAttribute="trailing" id="Jo4-Vj-yBW"/>
+                            <constraint firstItem="Nxr-dg-lcv" firstAttribute="top" secondItem="DyL-LX-bif" secondAttribute="bottom" constant="16" id="KWa-Bg-JxZ"/>
+                            <constraint firstItem="6H3-Up-YYQ" firstAttribute="centerX" secondItem="Ms5-8d-1Va" secondAttribute="centerX" id="O4o-Gv-BtC"/>
+                            <constraint firstItem="DyL-LX-bif" firstAttribute="centerX" secondItem="Nxr-dg-lcv" secondAttribute="centerX" id="R38-UH-DaW"/>
+                            <constraint firstItem="4xr-FB-C3p" firstAttribute="top" secondItem="Nxr-dg-lcv" secondAttribute="bottom" constant="40" id="Swz-eH-kXf"/>
+                            <constraint firstItem="DyL-LX-bif" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="hRK-GI-wgy"/>
+                            <constraint firstItem="04d-9P-SN6" firstAttribute="centerX" secondItem="4xr-FB-C3p" secondAttribute="centerX" id="mHO-9f-KgA"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="04d-9P-SN6" secondAttribute="bottom" constant="122" id="oKe-1k-DJ4"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="uhP-Ln-Zmh"/>
+                                <exclude reference="5g7-1L-kqE"/>
+                                <exclude reference="XJz-p9-YLr"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <navigationItem key="navigationItem" title="Calculadora IMC" id="Wby-Y8-DIP"/>
+                    <connections>
+                        <outlet property="Peso" destination="6H3-Up-YYQ" id="Msu-M1-i0N"/>
+                        <outlet property="estatura" destination="Nxr-dg-lcv" id="Skp-Q8-NSZ"/>
+                        <outlet property="peso" destination="6H3-Up-YYQ" id="lgk-88-WBx"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1207" y="305"/>
+        </scene>
+        <!--Resultados-->
+        <scene sceneID="rzu-7e-JXC">
+            <objects>
+                <viewController id="N14-Sk-RTZ" customClass="resultados" customModule="CalculadoraMC" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="oqt-bG-Fd3"/>
+                        <viewControllerLayoutGuide type="bottom" id="AyC-Tn-R5D"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Txf-iK-wKE">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fw8-2y-5VJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1922" y="305"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="Yct-0h-I5n">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="ACe-QZ-XXB" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="uW5-8u-ngU">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="X4Y-a8-hKG"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="I3U-cR-K73" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="395" y="305"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="ninja" width="16" height="16"/>
+    </resources>
+</document>
